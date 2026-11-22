@@ -1,22 +1,18 @@
 # Template
-template
+placeholder
 
 ## Requirements
-- **C++ Compiler (GCC or Clang)**
-- **CMake + Ninja**
-- **Neovim + Clangd**
+- **OS:** Linux
+- **Compiler:** GCC w/ C++23 support
+- **Build System:** CMake + Ninja
 
 ## Config & Building
 Configure CMake
+An optional flag is ```-DENABLE_SANITIZERS=On```
 ```
 cmake -S . -B build -G Ninja
 ```
-Some optional flags are
-```-DCMAKE_BUILD_TYPE=(Debug, Release, RelWithDebInfo, MinSizeRel)```
-and
-```-DTOGGLE_ASAN=(On, Off)```
-
 Build & run project
 ```
-./run.sh (project_args)
+./run.sh (args)
 ```
